@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Handlee&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      position: fixed;
+      padding: 0.5em 2em;
+      border: none;
+      border-radius: 20px;
+      top: 20px;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+    .logo{
+      font-family: 'Handlee', cursive;
+    }
+
+    nav>ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    nav>ul>li {
+      list-style: none;
+    }
+
+    nav>ul>li>a {
+      text-decoration: none;
+      color: #fff;
+      font-family: 'Handlee', cursive;
+      font-size: 1.2rem;
+    }
+    .icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2.5em;
+      height: 2.5em;
+      border: none;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero {
+      display: flex;
+      background-image: url(d9b1a1416f466987cc2491c8ce5f83a3.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .over-lay {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      background-image: url(overlay.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      object-fit: cover;
+      left: 50%;
+      top: 18%;
+      transform: translate(-50%);
+      border: none;
+      border-radius: 20px;
+      height: 80%;
+      width: 75%;
+    }
+
+    .text-overlay {
+      display: flex;
+      justify-content: center;
+      margin: auto 2em;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 70%;
+      height: 0%;
+      color: #fff;
+    }
+
+     .text-overlay h1{
+      font-family: 'Bree Serif', serif;
+      font-size: 3.4rem;
+     }
+
+    .text-overlay> p{
+      width: 75%;
+      font-size: 1.6rem;
+      font-family: 'Merriweather', sans-serif;
+    }
+    .text-overlay>button{
+      width: fit-content;
+      padding: 0.6em 1em;
+      border: none;
+      border-radius: 10px;
+      color: rgb(2, 34, 2);
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h2>Plantly</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="icon">
+  <i class="fas fa-search" style="color: rgb(255, 255, 255);"></i>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="over-lay">
+        <div class="text-overlay">
+          <h1>Find the perfect complement to your room</h1>
+          <p>Carefully curated, sustainably grown indoor plants delivered straight to your doorstep.No fuss</p>
+          <button>Browse the collection</button>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+</body>
+
+</html>

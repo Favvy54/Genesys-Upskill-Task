@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholarship Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; 
+      /* gap: 1.2rem; */
+    }
+
+    fieldset {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: stretch;
+      padding: 1rem;
+    }
+
+    fieldset div {
+      flex: 1;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="date"],
+    input[type="time"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="file"],
+    input[type="color"],
+    textarea,
+    select {
+      width: 100%;
+    }
+    
+
+    label[for="male"],
+    label[for="female"],
+    label[for="other"],
+    label[for="reading"],
+    label[for="sports"],
+    label[for="music"],
+    label[for="travelling"] {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    .gender,
+    .checkbox {
+      display: flex;
+      gap: 1.2rem;
+    }
+  </style>
+</head>
+
+<body style="display: flex; justify-content: center; align-items: center; min-height: 100vh; flex-direction: column;">
+  <h1 style="text-align: center;">SCHOLARSHIP APPLICATION FORM</h1>
+  <p style="text-align: center;">Please fill in all the fields carefully</p>
+  <form action="submit.php" method="post">
+    <!-- Personal Information  -->
+    <fieldset>
+      <legend><b>1. Personal Information</b></legend>
+      <div>
+        <label for="firstname"><b>Full Name:</b></label>
+        <br>
+        <input type="text" placeholder="Enter your full name">
+        <br><br>
+
+        <label for="email"><b>Email Address:</b></label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="example@email.com">
+        <br><br>
+
+
+        <label for="password"><b>Password:</b></label>
+        <br>
+        <input type="password" name="password" id="password" placeholder="********">
+        <br><br>
+
+
+        <label for="phoneNumber"><b>Phone Number:</b></label>
+        <br>
+        <input type="tel" name="telephone" id="telephone" placeholder="000-0000-0000">
+        <br><br>
+
+        <label for="dateOfBirth"><b>Date of Birth:</b></label>
+        <br>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+
+        <label for="age"><b>Age:</b></label>
+        <br>
+        <input type="number" name="age" id="age">
+        <br><br>
+
+        <label for="gender"><b>Gender:</b></label>
+        <br>
+        <div class="gender">
+          <label for="male">
+            <input type="radio" name="male" id="male">
+            Male
+          </label>
+          <label for="female"> <input type="radio" name="female" id="female">Female</label>
+
+          <label for="other">
+            <input type="radio" name="other" id="other">
+            Other
+          </label>
+        </div>
+
+        <br><br>
+
+
+        <label for="nationality"><b>Nationality:</b></label>
+        <br>
+        <input type="text" name="nationality" id="nationality">
+        <br><br>
+      </div>
+
+      <div>
+        <label for="origin"><b>State of Origin:</b></label>
+        <br>
+        <input type="text" name="origin" id="origin">
+        <br><br>
+
+        <label for="hobbies"><b>Hobbies:</b></label>
+        <br>
+        <div class="checkbox">
+          <label for="reading">
+            <input type="checkbox" name="reading" id="reading">
+            Reading
+          </label>
+          <label for="sports"><input type="checkbox" name="sports" id="sports">
+            Sports</label>
+          <label for="music">
+            <input type="checkbox" name="music" id="music">
+            Music
+          </label>
+          <label for="travelling">
+            <input type="checkbox" name="travelling" id="Travelling">
+            Travelling
+          </label>
+
+        </div>
+
+        <br><br>
+        <label for="file"><b>Upload Passport:</b></label>
+        <br>
+        <input type="file" name="file" id="file">
+        <br><br>
+
+        <label for="url"><b>Website (URL):</b></label>
+        <br>
+        <input type="url" name="website" id="website">
+        <br><br>
+
+        <label for="color"><b>Favorite Color:</b></label>
+        <br>
+        <input type="color" name="color" id="color">
+        <br><br>
+        <label for="time"><b>Preferred Contact Time:</b></label>
+        <br>
+        <input type="time" name="time" id="time">
+        <br><br>
+        <label for="select"><b>How did you hear about us?</b></label>
+        <br>
+        <select name="" id="">
+          <option value="--Select an option--">--Select an option--</option>
+        </select>
+        <br><br>
+        <label for="newsletter"><b>Subscribe to Newsletter:</b></label>
+        <br>
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <span>Yes, I want to subscribe</span>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><b>2. ACADEMIC INFORMATION</b></legend>
+      <div>
+        <label for="institution"><b>Current institution:</b></label>
+        <br>
+        <input type="text" placeholder="Enter your institution">
+        <br><br>
+        <label for="course"><b>Course of Study:</b></label>
+        <br>
+        <select name="course" id="course">
+          <option value="--Select Course--">--Select Course--</option>
+        </select>
+        <br><br>
+
+
+        <label for="study"><b>Level of Study:</b></label>
+        <br>
+        <select name="level" id="level">
+          <option value="--Select Course--">--Select Level--</option>
+        </select>
+        <br><br>
+
+        <label for="admission"><b>Year of Admission:</b></label>
+        <br>
+        <input type="date" name="admission" id="admission">
+        <br><br>
+        <label for="gpa"><b>CGPA / GPA:</b></label>
+        <br>
+        <input type="text" placeholder="Enter your CGPA">
+        <br><br>
+
+        <label for="modeStudy"><b>Mode of Study:</b></label>
+        <br>
+        <div class="study">
+                  <label for="fulltime">
+          <input type="radio" name="fulltime" id="fulltime">
+          Full-time
+        </label><label for="parttime">
+          <input type="radio" name="parttime" id="parttime">
+          Part-time
+        </label>
+        <label for="learning">
+          <input type="radio" name="learning" id="learning">
+          Distance Learning
+        </label>
+        </div>
+
+      </div>
+
+      <div>
+        <label for="transcript"><b>Upload Transcript:</b></label>
+        <br>
+        <input type="file" name="transcript" id="transcript">
+        <br><br>
+        <label for="studyTime"><b>Preferred Study Time:</b></label>
+        <br>
+        <input type="time" name="studyTime" id="studyTime">
+        <br><br>
+        <label for="income"><b>Monthly Income Range:</b></label>
+        <br>
+        <span>0</span>
+        <input type="range" name="incomeRange" id="incomeRange" min="0" max="100" value="20">
+        <span>100</span>
+        <br><br>
+
+        <label for="statement"><b>Personal Statement:</b></label>
+        <br>
+        <textarea name="" id="" cols="40" rows="8" placeholder="Write about yourself..."></textarea>
+      </div>
+    </fieldset>
+
+  </form>
+</body>
+
+</html>
